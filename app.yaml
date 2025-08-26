@@ -1,0 +1,6 @@
+kind: wasmer.io/App.v0
+name: travel-manage
+owner: tygamusafiri36
+package: .
+scaling:
+  mode: single_concurrency
