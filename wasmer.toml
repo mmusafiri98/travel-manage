@@ -10,6 +10,7 @@ version = "1.0.0"
 "/app/" = "."
 
 [build]
+# Génère le dossier vendor/ pour Laravel
 command = "composer install --no-dev --optimize-autoloader"
 
 [[command]]
@@ -19,4 +20,5 @@ runner = "wasi"
 
 [command.annotations.wasi]
 main-args = ["-t", "/app/public", "-S", "0.0.0.0:8080"]
+
 
