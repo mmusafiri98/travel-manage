@@ -1,24 +1,12 @@
-[package]
-name = "travel-manage"
-version = "1.0.0"
-
 [dependencies]
 "php/php-eh" = "=8.3.404-beta.6"
-"wasmer/composer" = "latest"
 
 [fs]
 "/app/" = "."
-
-[build]
-# Génère le dossier vendor/ pour Laravel
-command = "composer install --no-dev --optimize-autoloader"
 
 [[command]]
 name = "run"
 module = "php/php-eh:php"
 runner = "wasi"
-
 [command.annotations.wasi]
-main-args = ["-t", "/app/public", "-S", "0.0.0.0:8080"]
-
-
+main-args = ["-t", "/app/public", "-S", "localhost:8080"]
