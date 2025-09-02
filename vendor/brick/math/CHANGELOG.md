@@ -1,5 +1,4 @@
 # Changelog
-
 All notable changes to this project will be documented in this file.
 
 ## [0.13.1](https://github.com/brick/math/releases/tag/0.13.1) - 2025-03-29
